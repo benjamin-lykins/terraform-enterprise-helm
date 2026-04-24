@@ -293,6 +293,9 @@ openshift:
   enabled: false
 
 env:
+  # Set to false to disable creation of the terraform-enterprise-env-secrets Secret.
+  # Use this when managing that Secret outside of this chart.
+  createSecret: true
   # configMapRefs:
   #   - name:
   # secretRefs:
